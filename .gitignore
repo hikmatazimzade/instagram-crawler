@@ -1,0 +1,5 @@
+myvenv/
+.idea/
+__pycache__/
+data/
+cookies/cookies.json

@@ -1,0 +1,5 @@
+DB_NAME = "postgres"
+DB_USER = "postgres"
+DB_PASSWORD = "postgres"
+DB_HOST = "postgres" # Change it to localhost in local device
+DB_PORT = "5432"
