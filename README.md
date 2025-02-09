@@ -59,7 +59,7 @@ Ensure you have the following installed:
 ### Manual Setup (Using Virtual Environment)
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/instagram-crawler.git
+git clone https://github.com/hikmatazimzade/instagram-crawler.git
 cd instagram-crawler
 
 # Create a virtual environment
