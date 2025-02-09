@@ -68,7 +68,6 @@ async def run(accounts_urls: List[str]) -> None:
         return
 
     CreateDB().create()
-    logger.info("Crawler Started Working...")
     while True:
         logger.info(f"Account Urls -> {accounts_urls}")
         try:
