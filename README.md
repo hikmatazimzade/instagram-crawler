@@ -59,7 +59,7 @@ Ensure you have the following installed:
 ### Manual Setup (Using Virtual Environment)
 ```bash
 # Clone the repository
-git clone https://github.com/hikmatazimzade/instagram-crawler.git
+git clone https://github.com/yourusername/instagram-crawler.git
 cd instagram-crawler
 
 # Create a virtual environment
@@ -92,17 +92,24 @@ docker run -d instagram-crawler
 ```
 
 ## Usage
-Before running the crawler, ensure you have set up your Instagram account credentials in the `.account_env` file.
+Before running the crawler, ensure you have set up your Instagram account credentials in the `.account_env` file located inside the `cookies` folder.
 
 Run the crawler manually with:
 ```bash
-python crawler/main.py
+# On Windows
+py -m crawler.main
+
+# On Mac/Linux
+python3 -m crawler.main
 ```
 
 Or if using Docker:
 ```bash
 docker start instagram-crawler
 ```
+
+### Docker Database Configuration
+If running the crawler in Docker, ensure that `DB_HOST` is set to `postgres` in the environment settings.
 
 ## Database Configuration
 The crawler writes data to a PostgreSQL database. Ensure your database is set up correctly by modifying the configuration settings in the project before running the script.
