@@ -1,11 +1,9 @@
 # Instagram Crawler
 
 ## Overview
-This Instagram Crawler is designed to systematically scrape posts from famous 
-Instagram accounts. It starts with an initial set of profile URLs, collects their posts along 
-with metadata, and downloads images for further analysis.
-The crawler continuously expands its dataset by finding high-profile accounts with the most followers
-and scraping their connections, ensuring a growing repository of Instagram data.
+This Instagram Crawler is designed to systematically scrape posts from famous Instagram accounts, focusing on capturing both textual and visual content. It starts with an initial set of profile URLs, collects their posts along with metadata, and downloads images for further analysis. The crawler is particularly effective at gathering **post descriptions and content types** from popular accounts, making it an ideal tool for **building image and video datasets, training vision models, and generating multimedia content**.
+
+By structuring the collected data in an organized manner, the crawler ensures that it can be seamlessly integrated into **machine learning pipelines, AI-based captioning systems, and multimodal applications**. Furthermore, the crawler continuously expands its dataset by discovering high-profile accounts with the most followers and scraping their connections, ensuring a growing and diverse repository of Instagram data.
 
 ## Features
 - Scrapes Instagram posts including:
@@ -50,6 +48,7 @@ The crawler collects and stores the following data fields:
 6. **Repeat Process**: The cycle continues, ensuring data growth.
 
 ## Installation
+
 ### Prerequisites
 Ensure you have the following installed:
 - Python 3.8+
@@ -80,7 +79,6 @@ pip install -r requirements.txt
 
 ### Docker Setup
 Alternatively, you can run the crawler using Docker.
-
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/instagram-crawler.git
@@ -90,13 +88,15 @@ cd instagram-crawler
 docker build -t instagram-crawler .
 
 # Run the crawler container
-docker run --env-file .env -d instagram-crawler
+docker run -d instagram-crawler
 ```
 
 ## Usage
+Before running the crawler, ensure you have set up your Instagram account credentials in the `.account_env` file.
+
 Run the crawler manually with:
 ```bash
-py crawler/main.py
+python crawler/main.py
 ```
 
 Or if using Docker:
