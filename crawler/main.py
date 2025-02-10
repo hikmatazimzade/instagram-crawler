@@ -3,7 +3,6 @@ import asyncio
 from crawler.run_crawler import run
 
 
-
 if __name__ == '__main__':
     initial_urls = [
         "https://www.instagram.com/georgehotz/",
