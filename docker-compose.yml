@@ -20,8 +20,6 @@ services:
     restart: always
     depends_on:
       - postgres
-    volumes:
-      - ./downloads:/app/downloads
     command: ["sh", "-c", "sleep 5 && python -m crawler.main"]
 
 volumes:
