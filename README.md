@@ -112,7 +112,7 @@ docker start instagram-crawler
 If running the crawler in Docker, ensure that `DB_HOST` is set to `postgres` in the environment settings.
 
 ## Database Configuration
-The crawler writes data to a PostgreSQL database. Ensure your database is set up correctly by modifying the configuration settings in the project before running the script.
+The crawler writes data to a PostgreSQL database. Ensure your database is set up correctly by modifying .database_env file inside the `db` folder before running the script.
 
 ## Potential Use Cases
 - Training computer vision models
