@@ -10,7 +10,7 @@ from db.handle_followers import FollowerDB
 from db.create_table import CreateDB
 from db.write_data import WriteDB
 from db.update_posts import UpdateDB
-from cookies.handle import handle_cookies
+from cookies.handle import handle_cookies, check_login
 from utils.logger import get_logger
 
 logger = get_logger("crawler_logger")
@@ -64,10 +64,13 @@ async def get_data(account_urls: List[str]) -> (
 
 async def run(accounts_urls: List[str]) -> None:
     cookies_state = await handle_cookies()
-    if not cookies_state:
+    login_state = check_login()
+
+    if not cookies_state or not login_state:
         return
 
     CreateDB().create()
+    logger.info("Crawler Started Working...")
     while True:
         logger.info(f"Account Urls -> {accounts_urls}")
         try:
