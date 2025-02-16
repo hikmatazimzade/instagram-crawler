@@ -5,6 +5,17 @@ This Instagram Crawler is designed to systematically scrape posts from famous In
 
 By structuring the collected data in an organized manner, the crawler ensures that it can be seamlessly integrated into **machine learning pipelines, AI-based captioning systems, and multimodal applications**. Furthermore, the crawler continuously expands its dataset by discovering high-profile accounts with the most followers and scraping their connections, ensuring a growing and diverse repository of Instagram data.
 
+## Account Authentication
+1. Open `cookies/.account_env` file
+2. Change the email(or username) and password variables' value to the ones corresponding to your Instagram account.
+```python
+email="your_email@email.com"
+password="your_password"
+```
+
+### Docker Database Configuration
+If running the crawler in Docker, ensure that `DB_HOST` is set to `postgres` in the environment settings.
+
 ## Features
 - Scrapes Instagram posts including:
   - Post descriptions
@@ -91,9 +102,6 @@ docker build -t instagram-crawler .
 docker run -d instagram-crawler
 ```
 
-## Usage
-Before running the crawler, ensure you have set up your Instagram account credentials in the `.account_env` file located inside the `cookies` folder.
-
 Run the crawler manually with:
 ```bash
 # On Windows
@@ -107,9 +115,6 @@ Or if using Docker:
 ```bash
 docker start instagram-crawler
 ```
-
-### Docker Database Configuration
-If running the crawler in Docker, ensure that `DB_HOST` is set to `postgres` in the environment settings.
 
 ## Database Configuration
 The crawler writes data to a PostgreSQL database. Ensure your database is set up correctly by modifying .database_env file inside the `db` folder before running the script.
