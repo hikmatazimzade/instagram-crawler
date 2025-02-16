@@ -116,9 +116,6 @@ Or if using Docker:
 docker start instagram-crawler
 ```
 
-## Database Configuration
-The crawler writes data to a PostgreSQL database. Ensure your database is set up correctly by modifying .database_env file inside the `db` folder before running the script.
-
 ## Potential Use Cases
 - Training computer vision models
 - Social media trend analysis
