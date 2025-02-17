@@ -90,6 +90,7 @@ pip install -r requirements.txt
 
 ### Docker Setup
 Alternatively, you can run the crawler using Docker.
+
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/instagram-crawler.git
