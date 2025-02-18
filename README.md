@@ -128,6 +128,5 @@ docker start instagram-crawler
 - Scraping Instagram without permission may violate their Terms of Service.
 - Ensure compliance with local laws and regulations when using this tool.
 
-
 ## License
 This project is licensed under the [MIT License](LICENSE).
