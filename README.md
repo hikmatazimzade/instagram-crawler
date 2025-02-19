@@ -89,7 +89,7 @@ pip install -r requirements.txt
 ```
 
 ### Docker Setup
-Alternatively, you can run the crawler using Docker.
+Here is how you can run the crawler using Docker.
 
 ```bash
 # Clone the repository
