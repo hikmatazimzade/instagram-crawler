@@ -1,4 +1,3 @@
-# Use an official Python image
 FROM python:3.10
 
 # Set working directory
