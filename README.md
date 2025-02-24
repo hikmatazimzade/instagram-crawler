@@ -85,7 +85,6 @@ source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Configure PostgreSQL settings in config file
 ```
 
 ### Docker Setup
