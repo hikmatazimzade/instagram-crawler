@@ -14,7 +14,7 @@ password="your_password"
 ```
 
 ### Docker Database Configuration
-If running the crawler in Docker, ensure that `DB_HOST` is set to `postgres` in the environment settings.
+If running the crawler in Docker, ensure that `DB_HOST` is set to `postgres` in the `db/.database_env` file.
 
 ## Features
 - Scrapes Instagram posts including:
