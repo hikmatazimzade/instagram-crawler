@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y \
     libasound2 \
     && rm -rf /var/lib/apt/lists/*
 
-# Ensure correct permissions for Playwright
+# Ensure correct permissions for Playwright Library
 RUN playwright install-deps
 
 # Run the crawler as a module
